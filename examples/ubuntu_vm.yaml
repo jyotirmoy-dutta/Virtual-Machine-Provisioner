@@ -1,0 +1,17 @@
+vm:
+  name: ubuntu-test
+  box: ubuntu/bionic64
+  memory: 2048
+  cpus: 2
+  network:
+    type: nat
+    forwarded_ports:
+      - guest: 22
+        host: 2222
+  synced_folders:
+    - host: ./shared
+      guest: /vagrant_data
+  provision:
+    - type: shell
+      inline: |
+        echo Hello from inside the VM! 

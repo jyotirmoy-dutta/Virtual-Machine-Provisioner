@@ -1,0 +1,39 @@
+vms:
+  - name: web-server
+    box: ubuntu/bionic64
+    memory: 2048
+    cpus: 2
+    network:
+      type: nat
+      forwarded_ports:
+        - guest: 22
+          host: 2222
+        - guest: 80
+          host: 8080
+    provision:
+      - type: shell
+        inline: |
+          apt-get update
+          apt-get install -y nginx
+          systemctl enable nginx
+          systemctl start nginx
+          echo "Web Server Ready!" > /var/www/html/index.html
+
+  - name: db-server
+    box: ubuntu/bionic64
+    memory: 1024
+    cpus: 1
+    network:
+      type: nat
+      forwarded_ports:
+        - guest: 22
+          host: 2223
+        - guest: 3306
+          host: 3306
+    provision:
+      - type: shell
+        inline: |
+          apt-get update
+          apt-get install -y mysql-server
+          systemctl enable mysql
+          systemctl start mysql 

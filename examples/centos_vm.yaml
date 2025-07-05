@@ -1,0 +1,25 @@
+vm:
+  name: centos-test
+  box: centos/7
+  memory: 4096
+  cpus: 4
+  network:
+    type: nat
+    forwarded_ports:
+      - guest: 22
+        host: 2223
+      - guest: 80
+        host: 8080
+      - guest: 443
+        host: 8443
+  synced_folders:
+    - host: ./web
+      guest: /var/www/html
+  provision:
+    - type: shell
+      inline: |
+        yum update -y
+        yum install -y httpd
+        systemctl enable httpd
+        systemctl start httpd
+        echo "Hello from CentOS VM!" > /var/www/html/index.html 
