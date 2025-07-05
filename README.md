@@ -1,7 +1,6 @@
 # 🚀 Virtual Machine Provisioner
 
 [![Python](https://img.shields.io/badge/Python-3.7+-blue.svg)](https://www.python.org/downloads/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey.svg)](https://github.com/yourusername/virtualMachineProvisioner)
 [![Vagrant](https://img.shields.io/badge/Vagrant-Required-orange.svg)](https://www.vagrantup.com/)
 [![VirtualBox](https://img.shields.io/badge/VirtualBox-Required-blue.svg)](https://www.virtualbox.org/)
@@ -289,22 +288,12 @@ We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) f
 - Update documentation for API changes
 - Ensure cross-platform compatibility
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## 🙏 Acknowledgments
 
 - [Vagrant](https://www.vagrantup.com/) - VM management framework
 - [VirtualBox](https://www.virtualbox.org/) - Virtualization platform
 - [Click](https://click.palletsprojects.com/) - Python CLI framework
 - [Rich](https://rich.readthedocs.io/) - Rich text and formatting library
-
-## 📞 Support
-
-- **Issues**: [GitHub Issues](https://github.com/yourusername/virtualMachineProvisioner/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/yourusername/virtualMachineProvisioner/discussions)
-- **Documentation**: [Wiki](https://github.com/yourusername/virtualMachineProvisioner/wiki)
 
 ## 🚀 Roadmap
 
@@ -320,8 +309,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 **Made with ❤️ for the DevOps community**
-
-[![GitHub stars](https://img.shields.io/github/stars/yourusername/virtualMachineProvisioner?style=social)](https://github.com/yourusername/virtualMachineProvisioner)
-[![GitHub forks](https://img.shields.io/github/forks/yourusername/virtualMachineProvisioner?style=social)](https://github.com/yourusername/virtualMachineProvisioner)
-[![GitHub issues](https://img.shields.io/github/issues/yourusername/virtualMachineProvisioner)](https://github.com/yourusername/virtualMachineProvisioner/issues)
-[![GitHub pull requests](https://img.shields.io/github/issues-pr/yourusername/virtualMachineProvisioner)](https://github.com/yourusername/virtualMachineProvisioner/pulls) 
